@@ -24,6 +24,9 @@ function App() {
     setPassword("");
   };
 
+  // ใช้ BASE_URL เพื่อให้รูปทำงานได้ทั้ง GitHub Pages และ Vercel
+  const nobitaImage = `${import.meta.env.BASE_URL}nobita.jpg`;
+
   /* =========================
      LOGIN
   ========================= */
@@ -197,7 +200,7 @@ function App() {
             <div className="image-frame">
 
               <img
-                src="/nobita.jpg"
+                src={nobitaImage}
                 alt="Nobita"
               />
 
